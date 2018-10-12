@@ -1,0 +1,27 @@
+## (e.g.)
+## multiple items for grid search
+MODEL_ARCH = RNN_MODEL, RNN_ATTENTION_MODEL, BIRNN_ATTENTION_MODEL ##RNN_MODEL, RNN_ATTENTION_MODEL, BIRNN_ATTENTION_MODEL
+BATCH_SIZE = 128
+EMB_MATRIX_FILENAME = False, True   ## If True, 'True' will be replaced by the *_emb_matrix_*.pkl filenames.
+EMB_SIZE = 64, 128
+ATT_H_SIZE = 32  # attention_layer_hidden_size when MODEL_ARCH == *_ATTENTION_*
+
+CLASS_WEIGHT = 6.0  ## panelty when loss occurs with target class
+KEEP_PROB = 0.5
+L2_REG = 1e-3   ## For ridge regularization terms
+LR = 1e-2, 5e-4
+DECAY_STEPS = 100
+DECAY_RATE = 0.9
+TRAIN_STEPS = 1000
+PRINT_BY = 10   ## printing and logging to tensorboard
+SAVE_BY = 1000 
+
+## RNN_ARCH; you can build multiple models by setting 'RNN_ARCH_{}_'...
+# rnn_architecture #1
+RNN_ARCH_1_cell_type = GRU  # GRU, LSTM
+RNN_ARCH_1_hidden_size = 64  # first rnn layer with 64 hidden_size
+RNN_ARCH_1_drop_out = False  # first rnn layer with no drop_out unit
+# rnn_architecture #2
+RNN_ARCH_2_cell_type = GRU  # GRU, LSTM
+RNN_ARCH_2_hidden_size = 64, 128   # first rnn layer with 64 hidden_size & second one with 128 hidden_size
+RNN_ARCH_2_drop_out = False, True  # first rnn layer with no drop_out unit & second one with drop_out unit

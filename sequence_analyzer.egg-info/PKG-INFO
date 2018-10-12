@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: sequence-analyzer
+Version: 1.0
+Summary: Analyze medical sequence from cdm_datasetmaker-datasets by deep learning methods 
+Home-page: UNKNOWN
+Author: Sanghyung Jin, Yourim Lee, Rae Woong Park
+Author-email: jsh90612@gmail.com, urimeeee.e.gmail.com, rwpark99@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: medical,sequence,deep learning,machine learning
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3
