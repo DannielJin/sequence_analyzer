@@ -1,0 +1,17 @@
+## (e.g.)
+# About edge_extracting
+LEFT_CONTEXT_SIZE = 2      #LEFT_CONTEXT_SIZE to get 'source-target' scores
+RIGHT_CONTEXT_SIZE = 2     #RIGHT_CONTEXT_SIZE to get 'source-target' scores
+DIRECTED = False           #If False, 'source-target-value' == 'target-source-value'
+
+# About emb_model (multiple items for grid search)
+MODEL_ARCH = LINE_MODEL    #LINE_MODEL
+BATCH_SIZE = 128
+EMB_SIZE = 32, 64          #Embedding size
+LR_p1 = 5e-2
+LR_p2 = 1e-5, 5e-5
+DECAY_STEPS = 1000
+DECAY_RATE = 0.9
+TRAIN_STEPS_p1 = 10000     #train for 1st-prox (edge info)
+TRAIN_STEPS_p2 = 10000     #train for 2nd-prox (neighbor info)
+PRINT_BY = 2000

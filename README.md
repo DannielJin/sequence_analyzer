@@ -27,13 +27,17 @@ pip3 uninstall ./dist/*.whl -y
 
 ## Usage example
 
+* SAMPLE_CODES in the EXAMPLE folder    
+
+Guidelines:  
 (1) In your project folder, (e.g.) /PRJ/  
 (2) Make folders;   
     - CONFIG  
     - DATA  
     - RESULT    
 (3) Run pipeline in your project folder.   
-  
+   
+   
 Make SA_PARAMS.txt in CONFIG FOLDER:
 ```
 ## (e.g.)

@@ -1,0 +1,5 @@
+SERVER_IP = SERVER_IP:PORT #127.0.0.1:1433
+USER = USERNAME #user
+PASSWD = PASSWORD #passwd
+CDM_DB = CDM_DB_NAME ##DB where OMOP_CDM data stored
+RESULT_DB = RESULT_DB_NAME ##DB where you will store query_outputs
