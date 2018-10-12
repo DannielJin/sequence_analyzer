@@ -15,6 +15,11 @@ Install cdm_datasetmaker:
 git clone https://github.com/DannielJin/cdm_datasetmaker.git
 pip3 install cdm_datasetmaker/dist/*.whl
 ```
+(OPTION) Install medterm2vec:
+```sh
+git clone https://github.com/DannielJin/medterm2vec.git
+pip3 install medterm2vec/dist/*.whl
+```
 
 ## Installation
 
