@@ -76,7 +76,7 @@ PIPELINE_START_LEVEL;
     3. RawSeq to multihot
     4. Multihot to Dataset      (when you want to restore datasets)
 
-2. (OPTIONAL) make emb_matrix by medterm2vec:
+2. (OPTION) make emb_matrix by medterm2vec:
 ```
 from medterm2vec import Run
 df_emb_results = Run(CONFIG_FOLDER_PATH = '/PRJ/CONFIG/',          #/PATH/TO/CONFIG/FOLDER/
@@ -119,6 +119,17 @@ df_results = Run(CONFIG_FOLDER_PATH = '/PRJ/CONFIG/',
                  MODEL_INDICES = [1, 3]) 
 ```
 
+When you run the pipeline, tensorboard service will be started. 
+If you run the codes in jupyter notebook, click the tensorboard_service_address (printed)
+Or, you can run tensorboard manually.
+```
+from sequence_analyzer.report import Run_tensorboard
+Run_tensorboard('/RESULT_FOLDER_PATH/PROJECT_NAME/CDM_DB_NAME/')
+```
+```
+from sequence_analyzer.report import Stop_tensorboard
+Stop_tensorboard()
+```
 
 ## Release History
 
