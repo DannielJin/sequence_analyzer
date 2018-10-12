@@ -4,7 +4,9 @@ Analyze medical sequence from cdm_datasetmaker-datasets by deep learning methods
 1. Building, training and testing sequential models
 2. Supports gird-search method for hyper-parameter tuning
 3. Reporting logs, fiugres and tables
-4. Monitoring by tensorboard
+4. Monitoring by tensorboard   
+
+* More detail info: DOCS/2018_OHDSI_SYMPOSIUM_SW_DEMO_NO2.pptx   
 
 ## Dependency
 
